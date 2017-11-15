@@ -1,6 +1,6 @@
 
 <ul>
-<% @products.each do |product| %>
-  <li><%= link_to product.name, product_path(product.id) %></li>
-<% end %>
+  <% @products.each do |product| %>
+    <li class="panel-header"><%= link_to product.name, product_path(product.id) %></li>
+  <% end %>
 </ul>
