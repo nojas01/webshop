@@ -6,7 +6,7 @@ devise_for :users
 
   resources :products, only: [:index, :show]
 
-
+resources :cart, only: [:show, :update]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
